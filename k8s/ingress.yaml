@@ -10,12 +10,6 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
 spec:
-  tls:
-  - hosts:
-    - techsolutions.yourdomain.com
-    secretName: techsolutions-tls
-  rules:
-  - host: techsolutions.yourdomain.com
     http:
       paths:
       - path: /(.*)
